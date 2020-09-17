@@ -1,0 +1,63 @@
+#googleMap {
+    width: 500px;
+    height: 500px;
+}
+
+.search__container p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2B2B2B;
+}
+
+.search__container h6 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.map {
+    width: 500px;
+    height: 592px;
+}
+
+.hotel {
+    margin-bottom: 30px;
+}
+
+.hotel-name-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    color: #000000 !important;
+}
+
+.rating {
+    width: 17px !important;
+}
+
+.cost {
+    font-family: Montserrat;
+    font-style: normal !important;
+    font-weight: 200 !important;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.cost span {
+    font-weight: 500 !important;
+}
+
+.hotel-star-cost {
+    display: flex;
+    justify-content: space-between;
+    height: 17px;
+}

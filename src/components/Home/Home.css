@@ -1,0 +1,53 @@
+.home__container {
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../resourses/Image/Rectangle\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home__title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 97.6842px;
+    line-height: 117px;
+    color: #FFFFFF;
+}
+
+.home__detail {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.home__booking-btn {
+    width: 161px;
+    height: 48px;
+    background: #F9A51A;
+    border-radius: 5px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+.home__row {
+    margin-top: 150px;
+}
+
+.home__image-container {
+    display: flex;
+}
+
+.home__image-container img {
+    width: 251px;
+    height: 396px;
+    cursor: pointer;
+}

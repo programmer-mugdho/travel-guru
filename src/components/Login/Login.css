@@ -1,0 +1,136 @@
+.login__container {
+    width: 570px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.login__container input {
+    width: 460px;
+}
+
+.login__forget {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #F9A51A;
+    cursor: pointer;
+}
+
+label {
+    font-family: Montserrat !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 22px;
+    color: #000000 !important;
+}
+
+.login__submit-btn {
+    height: 50px;
+    width: 460px;
+    width: 462px;
+    top: 609px;
+    margin-top: 25px;
+    background: #F9A51A;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    border: none;
+    color: #000000;
+}
+
+.login__submit-btn:focus {
+    outline: none;
+}
+
+.login__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 36px;
+    margin-bottom: 0;
+}
+
+.login__inner-container {
+    margin: 0 55px;
+}
+
+.login__alreadyText {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 16px;
+    color: #000000;
+}
+
+.login__facebook, .login__google {
+    width: 461px;
+    height: 51px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 57px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login__facebook {
+    background-image: url('../../resourses/Icon/fb.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 37px;
+    background-position-x: 8px;
+}
+
+.login__google {
+    background-image: url('../../resourses/Icon/google.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 37px;
+    background-position-x: 8px;
+}
+
+.login__facebook p, .login__google p {
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.or {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.or p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
