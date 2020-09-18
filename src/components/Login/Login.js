@@ -31,7 +31,7 @@ const Login = () => {
             .then(result => {
                 const createdUser = result.user;
                 const newUserInfo = { ...user } // Copy an instance of user object
-                newUserInfo.name = createdUser.displayName;
+                newUserInfo.first = createdUser.displayName;
                 newUserInfo.email = createdUser.email
                 setUser(newUserInfo) // Update the state
                 history.replace(from); // Go to protected route after login
@@ -50,9 +50,9 @@ const Login = () => {
                     const newUserInfo = { ...user }
                     newUserInfo.error = ''
                     newUserInfo.success = "Your account was created successfully!"
-                    newUserInfo.name = `${user.first} ${user.last}`
+                    newUserInfo.first = `${user.first} ${user.last}`
                     setUser(newUserInfo)
-                    updateUserName(`${user.first} ${user.last}`) // Passing the name of the user
+                    updateUserName(user.first) // Passing the name of the user
                     verifyEmail()
                     history.replace(from)
                 })
@@ -78,7 +78,7 @@ const Login = () => {
                 const newUserInfo = { ...user }
                 newUserInfo.error = ''
                 newUserInfo.success = "You have logged in successfully!"
-                newUserInfo.name = res.user.displayName
+                newUserInfo.first = res.user.displayName
                 setUser(newUserInfo)
                 history.replace(from)
             })
@@ -98,12 +98,10 @@ const Login = () => {
                 const createdUser = result.user;
                 const newUserInfo = { ...user }
                 newUserInfo.email = createdUser.email
-                newUserInfo.name = createdUser.displayName
+                newUserInfo.first = createdUser.displayName
                 newUserInfo.success = "You are now logged in successfully"
                 setUser(newUserInfo)
                 history.replace(from)
-                console.log(newUserInfo)
-                console.log(createdUser)
             })
             .catch(error => {
                 const newUserInfo = { ...user }

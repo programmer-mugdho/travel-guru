@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 import './Booking.css'
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { DestinationContext } from '../../App';
 import datas from '../../resourses/fakeData'
@@ -10,6 +10,11 @@ const Booking = () => {
     const history = useHistory()
     const [destination, setDestination] = useContext(DestinationContext)
     const place = datas.find(data => data.name === destination)
+    const [input, setInput] = useState("Dhaka")
+
+    const handleChange = (e) => {
+        setInput(e.target.value)
+    }
 
     return (
         <div className='home__container'>
@@ -26,7 +31,7 @@ const Booking = () => {
                         <div className="booking__form-container" style={{ marginBottom: '30px' }}>
                             <form className="booking__form">
                                 <p style={{ marginTop: '0', paddingTop: '27px' }}>Origin</p>
-                                <input type="text" value="Dhaka" id="" />
+                                <input type="text" onChange={handleChange} value={input} id="" />
                                 <p>Destination</p>
                                 <input value={place.name} type="text" name="" id="" />
                                 <br />

@@ -46,9 +46,9 @@ const Navbar = (props) => {
                         <a className={isDark ? "dark nav-link" : "nav-link"} href="#">Contact</a>
                     </li>
                     {
-                        user.name
+                        user.first
                             ? <li className="nav-item">
-                                <a className={isDark ? "dark nav-link nav-name" : "nav-link nav-name"} href="#">{user.name}</a>
+                                <a className={isDark ? "dark nav-link nav-name" : "nav-link nav-name"} href="#">{user.first}</a>
                             </li>
                             : <li className="nav-item nav-login-item">
                                 <a id='navbar__login-btn' className={isDark ? "dark nav-link" : "nav-link"} onClick={() => history.push('/login')}>Login</a>
